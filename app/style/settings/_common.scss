@@ -1,0 +1,88 @@
+// $mainColor: #000
+
+body {	
+	font-family: 'Open sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	overflow: hidden;
+}
+html{
+	overflow-x: hidden;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+
+svg {
+	overflow: hidden;
+}
+br{
+	line-height: 1;
+}
+.container {
+	width: 1190px;
+	margin: 0 auto;
+	padding: 0 10px;
+	@include r(1189) {
+		width: 1024px;
+	}
+	@include r(1023) {
+		width: 768px;
+		padding: 0 10px;
+	}
+	@include r(767) {
+		width: 640px;
+	}
+	@include r(639) {
+		width: 480px;
+	}
+	@include r(479) {
+		width: 100%;
+	}
+}
+
+.title {	
+	color: #000000;
+	font-family: "Yeseva One";
+	font-size: 54px;
+	font-weight: 400;
+	line-height: 64px;
+	text-align: center;
+	@include r(1189){
+		font-size: 42px;
+		line-height: 54px;
+	}
+	@include r(1023){	
+		font-size: 36px;
+		line-height: 1.1;
+	}
+	@include r(767){	
+		font-size: 32px;
+	}
+	@include r(639){	
+		font-size: 29px;
+	}
+	@include r(479){	
+		font-size: 26px;
+	}
+}
+
+.text-bold {
+	font-weight: 700;
+}
+.orange{
+	color: #e9862c;
+}
+.text-black {
+	font-weight: 900;
+}
+
+.ib {
+	display: inline-block;
+}
+
+.text-nowrap {
+	white-space: nowrap;
+}
+
