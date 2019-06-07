@@ -1,0 +1,145 @@
+.pin
+	padding: 0 0 200px
+	+r(1189)
+		padding-top: 20px
+		padding-bottom: 60px
+	&-title
+		position: relative
+		padding-top: 34px
+		+r(1189)
+			padding-top: 20px
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			width: 40px
+			height: 5px
+			background-color: #0aa5b5
+	&-content
+		display: flex
+		justify-content: space-between
+		margin-top: 55px
+		+r(1189)
+			margin-top: 40px
+		+r(1023)
+			justify-content: center
+			flex-wrap: wrap
+			margin-top: 25px
+		+r(767)
+			margin-top: 20px
+		+r(639)
+			margin-top: 15px
+	&-box
+		width: 305px
+		+r(1189)
+			width: 280px
+		+r(1023)
+				width: 100%
+				max-width: 320px
+				margin: 0px 5px 20px
+		+r(767)
+			max-width: 300px
+		+r(639)
+			margin-left: 0
+			margin-right: 0
+		&-last
+			width: 370px
+			background-color: #f3eee8
+			padding: 40px 60px 55px 40px
+			height: 100%
+			+r(1189)
+				width: 345px
+				padding: 30px 35px 50px
+			+r(1023)
+				width: 100%
+				max-width: 100%
+				padding: 20px
+				margin: 0
+			+r(767)
+				padding: 10px
+			.pin-box__text
+				color: #666666
+				font-family: "Open Sans"
+				font-size: 18px
+				font-style: italic
+				line-height: 30px
+				+r(1189)
+					
+		&__img
+			width: 100px
+			height: 100px
+			background-color: #c0ae96
+			border-radius: 50%
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-bottom: 22px
+			position: relative
+			+r(1189)
+				margin-bottom: 15px
+			+r(1023)
+				margin-right: auto
+				margin-left: auto
+			+r(767)
+				margin-bottom: 5px
+			&:before
+				content: ''
+				position: absolute
+				right: -200px
+				top: 50%
+				transform: translateY(-50%)
+				width: 170px
+				height: 1px
+				background-color: #e1dcd5
+				+r(1189)
+					right: -159px
+					width: 132px
+				+r(1023)
+					display: none
+			&:after
+				content: ''
+				position: absolute
+				top: 50%
+				transform: translateY(-50%) rotate(-45deg)
+				right: -198px
+				width: 14px
+				height: 14px
+				border-bottom: 1px solid #e1dcd5
+				border-right: 1px solid #e1dcd5
+				+r(1189)
+					right: -158px
+				+r(1023)
+					display: none
+		&__title
+			color: #000000
+			font-family: "Yeseva One"
+			font-size: 27px
+			font-weight: 400
+			line-height: 1
+			margin-bottom: 12px
+			+r(1189)
+				font-size: 25px
+				line-height: normal
+				margin-bottom: 5px
+			+r(1023)
+				text-align: center
+			+r(767)
+				font-size: 23px
+
+		&__text
+			color: #666666
+			font-family: "Open Sans"
+			font-size: 20px
+			font-weight: 400
+			line-height: 34px
+			+r(1189)
+				font-size: 19px
+				line-height: normal
+			+r(1023)
+				text-align: center
+			+r(767)
+				font-size: 18px
+.img-night
+	background-color: #2c3e68
