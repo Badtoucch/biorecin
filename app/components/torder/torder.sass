@@ -1,0 +1,158 @@
+.torder
+	padding: 95px 0 0px
+	background-color: #f3eee8
+	position: relative
+	.container
+		position: relative
+		z-index: 5
+	&-woman
+		position: absolute
+		bottom: 0
+		right: -65px
+		z-index: 0
+		overflow: hidden
+		+r(1189)
+			width: 730px
+		+r(1023)
+			display: none
+		&:before
+			content: ''
+			width: 540px
+			height: 540px
+			background-color: #faf8f6
+			border-radius: 50%
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-46%,-35%)
+			z-index: -1
+	&-title
+		text-align: left
+		position: relative
+		padding-top: 34px
+		+r(1023)
+			text-align: center
+			padding-top: 10px
+			margin-top: 10px
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 40px
+			height: 5px
+			background-color: #0aa5b5
+			+r(1023)
+				left: 50%
+				transform: translateX(-50%)
+	&-content
+		max-width: 380px
+		position: relative
+		padding-bottom: 110px
+		+r(1189)
+			max-width: 360px
+		+r(1023)
+			max-width: 100%
+			padding-bottom: 0
+	&-btn
+		margin-top: 34px
+		max-width: 100%
+		display: flex
+		align-items: center
+		padding-left: 40px
+		position: relative
+		+r(1023)
+			text-align: center
+			padding: 0
+			max-width: 360px
+			justify-content: center
+			margin: 20px auto 0
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			transform: translateY(-30%)
+			right: 47px
+			width: 30px
+			height: 11px
+			background: url(../img/btn-arrow.svg) no-repeat center
+			+r(1023)
+				display: none
+	&-name__product
+		position: absolute
+		left: 0
+		top: -123px
+		+r(1189)
+			top: -121px
+		+r(1023)
+			top: 0
+			position: initial
+			text-align: center
+			img
+				display: none
+.se-circle1
+	position: absolute
+	top: 0
+	left: 50%
+	transform: translateX(-585%)
+	width: 174px
+	height: 120px
+	overflow: hidden
+	&:before
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 174px
+		height: 174px
+		background-color: #faf8f6
+		border-radius: 50%
+.se-circle2
+	position: absolute
+	bottom: 0
+	left: 50%
+	transform: translateX(355%)
+	width: 174px
+	height: 87px
+	overflow: hidden
+	z-index: 0
+	&:before
+		content: ''
+		position: absolute
+		top: 	0px
+		left: 0
+		width: 174px
+		height: 174px
+		background-color: #faf8f6
+		border-radius: 50%
+		z-index: -1
+.se-circle3
+	width: 214px
+	height: 120px
+	position: absolute
+	top: 0
+	left: 50%
+	transform: translateX(485%)
+	overflow: hidden
+	&:before
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 214px
+		height: 214px
+		background-color: #faf8f6
+		border-radius: 50%
+.pack-name
+	font-size: 85px
+	line-height: 1
+	font-weight: 800
+	font-family: "Open Sans"
+	text-transform: uppercase
+	color: #dfd3c2
+	display: none
+	+r(1023)
+		display: block
+		font-size: 70px
+	+r(639)
+		font-size: 50px
