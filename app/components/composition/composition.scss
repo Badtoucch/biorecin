@@ -1,0 +1,315 @@
+.composition {
+  padding: 120px 0;
+  background: url("./../img/natural-bg.jpg") center top no-repeat;
+  background-size: cover;
+  &__title {
+    margin-bottom: 45px;
+    text-align: center;
+    padding-top: 34px;
+    span {
+      display: block;
+    }
+  }
+  &__day-night-box {
+    display: flex;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+  &__items-box {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  &__item-pearl {
+    display: block;
+    margin: 0 auto 21px;
+  }
+  &__item-subtitle {
+    display: block;
+    margin: 0 auto 59px;
+    text-align: center;
+    position: relative;
+    color: #000000;
+    font-family: "Yeseva One", serif;
+    font-size: 28px;
+    font-weight: 400;
+    &:before, &:after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 142px;
+      height: 1px;
+      background-color: #c6c3c0;
+      top: 15px;
+    }
+    &:before {
+      left: 5px;
+    }
+    &:after {
+      right: 5px;
+    }
+    &.-night {
+      margin: 0 auto 44px;
+    }
+  }
+  &__item {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    align-items: center;
+    position: relative;
+    img {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    /*DAY-items*/
+    &.-aloe {
+      min-height: 187px;
+      padding-left: 201px;
+    }
+    &.-vitamin {
+      min-height: 136px;
+      margin: 0 0 0 auto;
+      padding-top: 35px;
+      padding-left: 182px;
+      img {
+        top: 9px;
+        left: -40px;
+      }
+      p {
+        margin: 0 0 0 auto;
+      }
+    }
+    &.-acid {
+      min-height: 146px;
+      margin: 63px 0 0 115px;
+      padding-top: 61px;
+      padding-left: 175px;
+      p {
+        margin: 0 0 0 auto;
+      }
+    }
+    /*NIGHT items*/
+    &.-grape {
+      min-height: 146px;
+      margin: 60px 0 0 39px;
+      padding-left: 175px;
+      p {
+        padding-top: 32px;
+      }
+    }
+    &.-oil {
+      position: absolute;
+      max-width: 205px;
+      min-height: 146px;
+      margin: 68px 5px 0 auto;
+      padding-left: 60px;
+      top: 100px;
+      right: 10px;
+      img {
+        margin-top: 101px;
+        margin-left: 19px;
+      }
+    }
+    &.-mendal {
+      min-height: 146px;
+      margin: 60px 0 0 117px;
+      padding-top: 10px;
+      padding-left: 166px;
+
+    }
+    &.-melissa {
+      min-height: 146px;
+      margin: 17px 0 0 auto;
+      padding-top: 74px;
+      padding-left: 110px;
+      img {
+        top: 22px;
+        left: -165px;
+      }
+
+    }
+  }
+  &__item-name {
+    color: #444444;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media all and (max-width: 1189px) {
+  .composition {
+    &__item {
+      &.-grape {
+        min-height: 146px;
+        margin: 60px 0 0 24px;
+        padding-left: 165px;
+      }
+      &.-melissa {
+        padding-left: 90px;
+      }
+    }
+    &__item-subtitle {
+      &:before, &:after {
+        width: 100px;
+      }
+      &:before {
+        left: 20px;
+      }
+      &:after {
+        right: 20px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .composition {
+    background-position-x: 53%;
+    &__title {
+      margin-bottom: 25px;
+    }
+    &__item-subtitle {
+      margin: 0 auto 25px;
+      font-size: 25px;
+      &.-night {
+        margin: 0 auto 25px;
+      }
+      &:before, &:after {
+        display: none;
+      }
+    }
+    &__item {
+      &.-aloe {
+        margin-top: 45px;
+      }
+      &.-vitamin {
+        margin: 26px 0 0 45px;
+        img {
+          left: -15px;
+        }
+        p {
+          margin: 0 10px 0 auto;
+        }
+      }
+      &.-acid {
+        margin: 46px 0 0 0;
+        padding-top: 10px;
+      }
+      &.-grape {
+        margin: 15px 0 0 0;
+      }
+      &.-oil {
+        margin: 65px 5px 0 auto;
+        padding-left: 0;
+        top: 245px;
+        right: 100px;
+        img {
+          margin-top: 0;
+          margin-left: 150px;
+        }
+      }
+      &.-mendal {
+        margin: 126px 0 0 52px;
+      }
+      &.-melissa {
+        margin: -32px 0 0 105px;
+        padding: 170px 75px 5px 12px;
+        img {
+          top: 20px;
+          left: -100px;
+        }
+      }
+    }
+    &__item-name {
+      font-size: 18px;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .composition {
+    background: linear-gradient(to bottom,#f3eee8 0%,#f3eee8 18%,#f3eee8 50%,#e1e8ee 66%,#e1e8ee 100%);
+    &__day-night-box {
+      flex-wrap: wrap;
+
+    }
+    &__items-box {
+      display: flex;
+      flex-wrap: wrap;
+      &:last-child {
+        max-width: 560px;
+        margin: 30px auto 0;
+      }
+    }
+    &__item-subtitle {
+      width: 100%;
+    }
+    &__item {
+      flex-wrap: wrap;
+      max-width: 190px;
+      justify-content: center;
+      align-items: flex-end;
+      img {
+        position: relative;
+      }
+      p {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      &.-aloe {
+        margin: 0 auto;
+        padding: 0;
+      }
+      &.-vitamin {
+        margin: 0 auto;
+        padding: 0;
+        img {
+          left: 0;
+        }
+      }
+      &.-acid {
+        margin: 0 auto;
+        padding: 0;
+      }
+      &.-grape {
+        margin: 0 auto;
+        padding: 0;
+        img {
+          margin-left: 30px;
+        }
+        p {
+          padding-top: 0;
+        }
+      }
+      &.-oil {
+        position: relative;
+        margin: 0 auto;
+        padding: 0;
+        top: 0;
+        right: 0;
+        img {
+          margin: 0;
+        }
+      }
+      &.-mendal {
+        margin: 0 auto;
+        padding: 0;
+      }
+      &.-melissa {
+        margin: 0 auto;
+        padding: 0;
+        img {
+          top: 0;
+          left: 0;
+        }
+      }
+
+
+    }
+  }
+}

@@ -6,6 +6,10 @@
   max-height: 870px;
   background: url("./../img/header-bg.png") 0 120px no-repeat;
   background-size: cover;
+  &.-header-bottom {
+    max-height: 748px;
+    background-position: 0 0;
+  }
   &:after {
     display: block;
     position: absolute;
@@ -108,7 +112,7 @@
     position: absolute;
     width: 100%;
     max-width: 467px;
-    bottom: 125px;
+    bottom: 127px;
     left: -20px;
     &:before {
       display: block;
@@ -170,6 +174,11 @@
       background-size: cover;
       top: 322px;
       left: 277px;
+    }
+    &.-bottom-product {
+      &:after {
+        display: none;
+      }
     }
   }
   &__bottom-arrow {
@@ -292,22 +301,7 @@
     }
 
     &.-button {
-      /*width: 100%;
-      max-width: 195px;
-      height: 70px;
-      color: #ffffff;
-      border-radius: 34px;
-      background-color: #2c3e68;
-      font-family: Roboto, sans-serif;
-      font-size: 28px;
-      font-weight: 700;
-      line-height: 23.95px;
-      text-align: center;
-      cursor: pointer;
-      &:hover {
-        transition: 0.6s;
-        background-color: #203055;
-      }*/
+      margin-bottom: 0;
     }
 
   }
@@ -336,6 +330,7 @@
     border-radius: 34px;
     border: 1px solid #d6d0c5;
     background-color: #ffffff;
+    line-height: 68px;
     &.-name {
       &:before {
         display: block;
@@ -387,8 +382,16 @@
   }
 
 }
+input::-ms-clear { display: none; }
 
 /*___________MEDIA__________*/
+@media all and (-ms-high-contrast:none) {
+  .order-form__field input {
+    height: 68px;
+    line-height: 68px;
+  }
+}
+
 @media all and (max-width: 2000px) {
   .header {
     &:after {
@@ -404,7 +407,9 @@
   .header {
     max-height: 699px;
     margin: 0 auto 100px;
-
+    &.-header-bottom {
+      margin: 0 auto;
+    }
     &__navigation-item {
       display: block;
       position: relative;
@@ -441,6 +446,9 @@
         top: 75px;
         left: -7px;
       }
+      &.-face-bottom {
+        bottom: 0;
+      }
     }
     &__main-info {
       margin: 20px 0 0 auto;
@@ -452,6 +460,12 @@
       img {
         max-width: 610px;
       }
+      &.-bottom-product {
+        min-height: 250px;
+        img {
+          max-width: 440px;
+        }
+      }
     }
     &__bottom-arrow {
       top: -80px;
@@ -461,8 +475,13 @@
 
 @media all and (max-width: 1023px) {
   .header {
+    max-height: unset;
     margin-bottom: 0;
     background-position: 0 85px;
+    &.-header-bottom {
+      max-height: unset;
+      padding-bottom: 0;
+    }
     &__navigation {
       padding: 10px 0;
     }
@@ -471,7 +490,6 @@
       align-items: baseline;
       width: 100%;
       max-width: 305px;
-      //margin-top: 8px;
       &.-logo {
         max-width: 180px;
         margin-left: 0;
@@ -518,20 +536,29 @@
     }
     &__main-face {
       max-width: 310px;
-      bottom: 0;
+      bottom: -40px;
       left: 27px;
     }
     &__form-box {
+      width: 100%;
       max-width: 335px;
       margin: 0 0 0 auto;
     }
     &__main-product {
       max-width: 355px;
       min-height: 221px;
-      margin: 40px 0 0 auto;
+      margin: 30px 0 0 auto;
       img {
         position: relative;
         max-width: 395px;
+      }
+      &.-bottom-product {
+        min-height: auto;
+        margin-bottom: 10px;
+        img {
+          max-width: unset;
+          width: 100%;
+        }
       }
     }
     &__bottom-arrow {
@@ -579,6 +606,9 @@
 
 @media all and (max-width: 767px) {
   .header {
+    &.-header-bottom {
+      padding-bottom: 20px;
+    }
     &__navigation-box {
       display: none;
       &.-logo {
@@ -586,20 +616,31 @@
         margin: 0 auto;
       }
     }
+    &__main-info {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
     &__main-banner {
       margin: 0 auto 15px;
       font-size: 30px;
       text-align: center;
+      order: 1;
     }
     &__main-face {
       display: none;
     }
     &__form-box {
       margin: 0 auto;
+      order: 3;
     }
     &__main-product {
-      margin: 20px auto 0;
+      margin: 10px auto;
+      order: 2;
     }
+  }
+  .order-form {
+    padding: 10px 25px;
   }
 }
 @media all and (max-width: 639px) {
@@ -618,6 +659,7 @@
       font-size: 27px;
     }
     &__main-product {
+      margin: 0 auto 10px;
       min-height: auto;
     }
     &__main-product img {
