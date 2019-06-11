@@ -1,0 +1,211 @@
+.reviews
+	padding: 120px 0
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		width: 1170px
+		height: 4px
+		background-color: #f7f3ee
+	+r(1189)
+		padding: 60px 0
+	.container
+		position: relative
+	&-content
+		margin-top: 55px
+		position: relative
+		+r(1189)
+			margin-top: 30px
+		+r(1023)
+			margin-top: 25px
+		+r(767)
+			margin-top: 40px
+			margin-bottom: 30px
+		+r(479)
+			margin-top: 15px
+	&-box
+		max-width: 630px
+		display: flex
+		align-items: center
+		background-color: #f3eee8
+		+r(1189)
+			max-width: 570px
+		+r(1023)
+			max-width: 500px
+		+r(767)
+			max-width: 100%
+			margin: 0 5px
+		+r(479)
+			flex-direction: column
+
+		&-cont
+			margin: 30px 30px 30px 28px
+			+r(1189)
+				margin: 25px 25px 25px 23px
+			+r(1023)
+				margin: 15px 15px 15px 13px
+			+r(479)
+				margin: 15px
+		&__img
+			flex-shrink: 0
+			margin: 30px 0 30px 30px
+			+r(1189)
+				margin: 25px 0 25px 25px
+			+r(1023)
+				margin: 15px 0 15px 15px
+			+r(479)
+				max-width: 140px
+				margin: 15px 0 0
+		&__name
+			color: #000000
+			font-family: "Yeseva One"
+			font-size: 28px
+			font-weight: 400
+			line-height: 1
+			+r(1189)
+				font-size: 25px
+			+r(1023)
+				font-size: 22px
+			+r(479)
+				text-align: center
+		&__city
+			color: #000000
+			font-family: "Open Sans"
+			font-size: 18px
+			font-style: italic
+			line-height: 1
+			margin-top: 8px
+			font-weight: 500
+			+r(1189)
+				margin-top: 5px
+			+r(1023)
+				font-size: 17px
+				margin-top: 2px
+			+r(479)
+				text-align: center
+		&__text
+			color: #444444
+			font-family: "Open Sans"
+			font-size: 20px
+			font-weight: 400
+			line-height: 30px
+			margin-top: 22px
+			padding-top: 13px
+			position: relative
+			+r(1189)
+				font-size: 19px
+				line-height: normal
+				margin-top: 15px
+				padding-top: 10px
+			+r(1023)
+				font-size: 18px
+				margin-top: 10px
+				padding-top: 6px
+			+r(639)
+				font-size: 17px
+			+r(479)
+				text-align: center
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 71px
+				height: 1px
+				background-color: #c6c3c0
+				+r(479)
+				left: 50%
+				transform: translateX(-50%)
+
+.swiper-button-prev,.swiper-button-next
+	position: absolute
+	top: 50%
+	left: -90px
+	transform: translateY(-330%)
+	fill: #bfad95
+	transition: .5s
+	+r(1360)
+		left: -50px
+	+r(1280)
+		top: 0
+		transform: none
+		left: 0
+	+r(767)
+		top: -30px
+		left: 50%
+		transform: translateX(-154%)
+	+r(479)
+		top: 110px
+		transform: translateX(-300%)
+	&:hover
+		fill: #0aa5b5
+.swiper-button-next
+	right: -90px
+	left: auto
+	+r(1360)
+		right: -50px
+		left: auto
+	+r(1280)
+		right: 0
+	+r(767)
+		right: 50%
+		left: auto
+		transform: translateX(154%)
+	+r(479)
+		transform: translateX(300%)
+.swiper-pagination-def
+	bottom: 65px !important
+	left: 50%
+	transform: translateX(-50%)
+	+r(1023)
+		bottom: 48px !important
+	+r(767)
+		bottom: -30px !important
+	+r(639)
+		width: 100%
+.swiper-pagination-bullet
+	width: 12px
+	height: 12px
+	background-color: #efe8de
+	opacity: 1
+	margin: 0 9px
+	transition: .5s
+	+r(479)
+		margin: 0 6px
+	&:hover
+		background-color: #e1e9ef
+.swiper-pagination-bullet-active
+	background-color: #0aa5b5
+	box-shadow: 0px 0px 0px 5px #e1e9ef
+	&:hover
+		background: #0aa5b5
+.numbers-slide
+	margin-top: 80px
+	color: #666666
+	font-family: "Open Sans"
+	font-size: 20px
+	font-weight: 400
+	line-height: 1
+	text-align: center
+	position: relative
+	padding-top: 18px
+	+r(1023)
+		margin-top: 50px
+		padding-top: 12px
+		font-size: 19px
+	+r(767)
+		display: none
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		width: 50px
+		height: 1px
+		background-color: #e1dcd5
+.ns-active
+	color: #000000

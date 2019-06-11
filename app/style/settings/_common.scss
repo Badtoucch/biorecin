@@ -66,6 +66,20 @@ br{
 			display: none;
 		}
 	}
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 5px;
+		background-color: #0aa5b5;
+	}
+	&.-no-line {
+    &:before {
+      display: none;
+    }
+  }
 	@include r(1189){
 		font-size: 42px;
 		line-height: 1.2;
