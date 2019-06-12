@@ -1,0 +1,288 @@
+.popup-box {
+  width: 830px !important;
+
+  /*___LEFT*/
+  &__left-side {
+    display: block;
+    position: relative;
+  }
+  &__main-product {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 715px;
+    height: 400px;
+    margin-top: 49px;
+    margin-left: -6px;
+    z-index: 2;
+    img {
+      display: block;
+      max-width: 715px;
+      position: absolute;
+    }
+  }
+  &__pearls {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 268px;
+    left: 245px;
+    .pearl-day {
+      margin-left: -13px;
+    }
+    .pearl-night {
+      margin-top: 14px;
+      margin-left: 36px;
+    }
+  }
+
+  /*____RIGHT*/
+  &__right-side {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    top: 58px;
+    right: 0;
+  }
+  .order-form {
+    display: block;
+    width: 100%;
+    width: 291px;
+    border-top: 4px solid #0aa5b5;
+    background-color: #faf8f6;
+    padding: 15px 0 23px;
+
+    &__price-box {
+      display: flex;
+      width: 100%;
+      max-width: 325px;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding: 0 23px;
+    }
+    &__fields-box {
+      max-width: 300px;
+      align-items: center;
+      flex-direction: column;
+    }
+    &__item {
+      display: block;
+      &.-button {
+        max-width: 240px;
+        margin-bottom: 0;
+        span {
+          display: block;
+          font-size: 21px;
+          font-family: "Roboto", sans-serif;
+          font-weight: 500;
+          line-height: 21.87px;
+        }
+      }
+      &.-old-price {
+        .x_price_previous {
+          position: relative;
+          font-family: "Yeseva One", serif;
+          color: #a2a1a1;
+          line-height: 24px;
+          font-size: 28px;
+          letter-spacing: -1.4px;
+          &:before {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 66px;
+            height: 1px;
+            background-color: #fb5454;
+            top: 16px;
+            left: 2px;
+            transform: rotate(15deg);
+          }
+          &:after {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 66px;
+            height: 1px;
+            background-color: #fb5454;
+            top: 16px;
+            left: 2px;
+            transform: rotate(-15deg);
+          }
+        }
+        .x_currency {
+          padding-left: 2px;
+          font-family: "Yeseva One", serif;
+          color: #a2a1a1;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+
+      &.-new-price {
+        .x_price_current {
+          font-family: "Yeseva One", serif;
+          color: #2c3e68;
+          line-height: 24px;
+          font-size: 38px;
+          letter-spacing: -0.95px;
+        }
+        .x_currency {
+          padding-left: 2px;
+          font-family: "Yeseva One", serif;
+          color: #2c3e68;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+
+    }
+    &__price-name {
+      display: block;
+      color: #666666;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 18px;
+      padding-bottom: 9px;
+      &.-new {
+        color: #30302f;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        padding-bottom: 6px;
+      }
+    }
+    &__field {
+      display: block;
+      position: relative;
+      width: 100%;
+      max-width: 240px;
+      margin-top: 7px;
+      margin-bottom: 15px;
+      border-radius: 34px;
+      border: 1px solid #d6d0c5;
+      background-color: #ffffff;
+      line-height: 68px;
+      &.-name {
+        &:before {
+          display: block;
+          position: absolute;
+          content: "";
+          width: 19px;
+          height: 23px;
+          background: url("./../img/form-name.svg") no-repeat;
+          background-size: cover;
+          top: 23px;
+          left: 23px;
+        }
+      }
+      &.-phone {
+        &:before {
+          display: block;
+          position: absolute;
+          content: "";
+          width: 21px;
+          height: 24px;
+          background: url("./../img/form-phone.svg") no-repeat;
+          background-size: cover;
+          top: 23px;
+          left: 23px;
+        }
+      }
+
+      input {
+        max-width: 199px;
+        padding-right: 17px;
+        padding-left: 53px;
+        outline: none;
+        border: none;
+        border-radius: 34px;
+        background: transparent;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 68px;
+      }
+      input::-webkit-input-placeholder {
+        color: rgba(102, 102, 102, 0.67);
+      }
+      input::-moz-placeholder {
+        color: rgba(102, 102, 102, 0.67);
+      }
+      input:-ms-input-placeholder {
+        color: rgba(102, 102, 102, 0.67);
+      }
+    }
+    &__rules {
+      display: block;
+      margin: 15px auto 11px;
+      text-align: center;
+      opacity: 0.7;
+      color: #1f1f1f;
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 16.52px;
+    }
+    &__secure {
+      display: block;
+      position: relative;
+      padding-top: 19px;
+      padding-left: 33px;
+      text-align: center;
+      border-top: 1px solid #e1dcd5;
+      color: #1f1f1f;
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 16.52px;
+      &:before {
+        display: block;
+        position: absolute;
+        content: "";
+        width: 22px;
+        height: 19px;
+        top: 18px;
+        left: 36px;
+        background: url("./../img/popup-pay.png") no-repeat;
+        background-size: cover;
+      }
+    }
+
+  }
+  input::-ms-clear {
+    display: none;
+  }
+}
+
+.ever-popup__close {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #0aa5b5;
+  top: 19px !important;
+}
+
+.ever-popup__close:after, .ever-popup__close:before {
+  top: 20px !important;
+  left: 4px !important;
+  width: 32px !important;
+  height: 2px !important;
+}
+
+/*________MEDIA______*/
+@media all and (max-width: 1023px) {
+  .popup-box {
+    width: 291px !important;
+    min-height: 442px;
+    &__left-side {
+      display: none;
+    }
+    .order-form {
+      &__item {
+        &.-button {
+          height: 70px;
+        }
+      }
+    }
+  }
+}

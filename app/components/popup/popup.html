@@ -1,0 +1,52 @@
+<div class="ever-popup-build" >
+    <div class="popup-box" id="cloneThis">
+        <!--LEFT-->
+        <div class="popup-box__left-side">
+            <div class="popup-box__main-product -bottom-product">
+                <img src="./img/product.png" alt="product">
+                <div class="popup-box__pearls">
+                    <img src="img/capsule-1.png" alt="capsule" class="pearl-day">
+                    <img src="img/capsule-2.png" alt="capsule" class="pearl-night">
+                </div>
+            </div>
+        </div>
+        <!--RIGHT-->
+        <div class="popup-box__right-side">
+            <form action="/submit" method="post" class="x_order_form order-form">
+
+                <div class="order-form__price-box">
+                    <div class="order-form__item -old-price">
+                        <p class="order-form__price-name">Старая цена:</p>
+                        <span class="x_price_previous">1980</span><span class="x_currency">грн</span>.
+
+                    </div>
+                    <div class="order-form__item -new-price">
+                        <p class="order-form__price-name -new">Новая цена:</p>
+                        <span class="x_price_current">990</span><span class="x_currency">грн</span>*
+
+                    </div>
+                </div>
+                <div class="order-form__fields-box">
+
+                    <label class="order-form__field -name">
+                        <input type="text" name="name" placeholder="Моё имя" required >
+                    </label>
+
+                    <label class="order-form__field -phone">
+                        <input type="tel" name="phone" placeholder="Мой телефон" required>
+                    </label>
+
+                    <button class="order-form__item -button btn" type="submit">
+                        Заказать
+                    <span>со скидкой</span>
+                    </button>
+                    <span class="order-form__rules">
+                        *при заказе курса
+                    </span>
+                </div>
+                <span class="order-form__secure">Оплата после получения</span>
+            </form>
+
+        </div>
+    </div>
+</div>
