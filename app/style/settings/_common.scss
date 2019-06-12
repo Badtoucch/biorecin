@@ -51,6 +51,7 @@ br{
 	text-align: center;
 	padding-top: 30px;
 	position: relative;
+	z-index: 10;
 	&:before {
 		content: '';
 		position: absolute;
@@ -66,12 +67,6 @@ br{
 			display: none;
 		}
 	}
-
-	&.-no-line {
-    &:before {
-      display: none;
-    }
-  }
 	@include r(1189){
 		font-size: 42px;
 		line-height: 1.2;
