@@ -2,7 +2,7 @@
   display: block;
   position: relative;
   width: 100%;
-  margin: 0 auto 166px;
+  margin: 0 auto 0px;
   max-height: 870px;
   background: url("./../img/header-bg.png") 0 120px no-repeat;
   background-size: cover;
@@ -424,7 +424,7 @@ input::-ms-clear { display: none; }
 @media all and (max-width: 1189px) {
   .header {
     max-height: 699px;
-    margin: 0 auto 100px;
+    margin: 0 auto 0px;
     &.-header-bottom {
       margin: 0 auto;
     }

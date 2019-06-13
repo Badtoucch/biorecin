@@ -209,3 +209,37 @@
 		background-color: #e1dcd5
 .ns-active
 	color: #000000
+.swiper-slide
+	opacity: 0
+	background: none
+	transition: 0.1s
+	.reviews-box-cont
+		position: absolute
+		top: 0
+		left: 0
+		opacity: 0
+.swiper-slide-active
+	background-color: #f3eee8
+	opacity: 1
+	.reviews-box-cont
+		position: inherit
+		opacity: 1
+.swiper-slide-next, .swiper-slide-prev
+	opacity: 1
+	.reviews-box__img
+		margin: 0
+.swiper-slide-prev
+	.reviews-box__img
+		transform: scale(1.5)
+		padding: 20px
+		margin-top: 10px
+		margin-left: auto
+		margin-right: 211px
+		background-color: #f3eee8
+.swiper-slide-next
+	.reviews-box__img
+		transform: scale(1.5)
+		padding: 20px
+		margin-top: 10px
+		margin-left: 206px
+		background-color: #f3eee8

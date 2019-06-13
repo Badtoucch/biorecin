@@ -63,17 +63,10 @@ br{
 		background-color: #0aa5b5;
 	}
 	&.-no-line {
-<<<<<<< HEAD
-    &:before {
-      display: none;
-    }
-  }
-=======
 		&:before {
 			display: none;
 		}
 	}
->>>>>>> dcd317ac12c07361c39c425308138760408f0228
 	@include r(1189){
 		font-size: 42px;
 		line-height: 1.2;
