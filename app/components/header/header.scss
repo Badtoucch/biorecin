@@ -360,7 +360,7 @@
         width: 19px;
         height: 23px;
         background: url("./../img/form-name.svg") no-repeat;
-        background-size: cover;
+        background-size: center;
         top: 23px;
         left: 23px;
       }
@@ -373,7 +373,7 @@
         width: 21px;
         height: 24px;
         background: url("./../img/form-phone.svg") no-repeat;
-        background-size: cover;
+        background-size: center;
         top: 23px;
         left: 23px;
       }
@@ -725,4 +725,9 @@ input::-ms-clear { display: none; }
       left: 52px;
     }
   }
+}
+.info-price{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 14px;
 }
