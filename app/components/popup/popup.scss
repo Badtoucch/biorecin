@@ -1,6 +1,8 @@
 .popup-box {
   width: 830px !important;
-
+  background-color: #e8e5e5;
+  padding: 30px;
+  border-radius: 20px;
   /*___LEFT*/
   &__left-side {
     display: block;
@@ -41,8 +43,8 @@
     display: block;
     position: absolute;
     z-index: 4;
-    top: 58px;
-    right: 0;
+    top: 91px;
+    right: 30px;
   }
   .order-form {
     display: block;
@@ -259,7 +261,8 @@
   width: 40px !important;
   height: 40px !important;
   background-color: #0aa5b5;
-  top: 19px !important;
+  top: 53px!important;
+  right: 30px !important;
 }
 
 .ever-popup__close:after, .ever-popup__close:before {
@@ -274,6 +277,8 @@
   .popup-box {
     width: 291px !important;
     min-height: 442px;
+    padding: 0;
+    background: none;
     &__left-side {
       display: none;
     }

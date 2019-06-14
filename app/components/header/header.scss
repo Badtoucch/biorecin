@@ -2,12 +2,13 @@
   display: block;
   position: relative;
   width: 100%;
-  margin: 0 auto 0px;
-  max-height: 870px;
+  margin: 0 auto 0;
+  max-height: 869px;
   background: url("./../img/header-bg.png") 0 120px no-repeat;
   background-size: cover;
   &.-header-bottom {
-    max-height: 748px;
+    max-height: 875px;
+    margin-bottom: 100px;
     background-position: 0 0;
   }
   &:after {
@@ -88,6 +89,7 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 29px;
+    cursor: pointer;
     &.-border {
       &:after {
         display: block;
@@ -112,7 +114,7 @@
     position: absolute;
     width: 100%;
     max-width: 467px;
-    bottom: 127px;
+    bottom: 0;
     left: -20px;
     &:before {
       display: block;
@@ -146,6 +148,7 @@
     display: block;
     width: 100%;
     max-width: 671px;
+    min-height: 682px;
     margin: 67px 0 0 auto;
     z-index: 2;
   }
@@ -154,7 +157,7 @@
   }
   &__main-product {
     display: block;
-    position: relative;
+    position: absolute;
     min-height: 355px;
     margin-top: 49px;
     margin-left: -6px;
@@ -206,7 +209,7 @@
     height: 47px;
     margin: 0 auto;
     z-index: 3;
-    top: -31px;
+    top: 94px;
     &:before {
       display: block;
       position: absolute;
@@ -423,8 +426,8 @@ input::-ms-clear { display: none; }
 
 @media all and (max-width: 1189px) {
   .header {
-    max-height: 699px;
-    margin: 0 auto 0px;
+    max-height: 822px;
+    margin: 0 auto 0;
     &.-header-bottom {
       margin: 0 auto;
     }
@@ -481,13 +484,13 @@ input::-ms-clear { display: none; }
       &.-bottom-product {
         min-height: 250px;
         img {
-          max-width: 440px;
+          max-width: 610px;
         }
       }
     }
     &__pearls {
-      top: 124px;
-      left: 94px;
+      top: 180px;
+      left: 155px;
       .pearl-day {
         width: 80px;
       }
@@ -563,6 +566,9 @@ input::-ms-clear { display: none; }
         margin-top: 0;
       }
     }
+    &__main-info {
+      min-height: unset;
+    }
     &__main-face {
       max-width: 310px;
       bottom: -40px;
@@ -574,6 +580,7 @@ input::-ms-clear { display: none; }
       margin: 0 0 0 auto;
     }
     &__main-product {
+      position: relative;
       max-width: 355px;
       min-height: 221px;
       margin: 30px 0 0 auto;
