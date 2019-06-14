@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		var target = $(el);
 		var targetPos = target.offset().top;
 		var winHeight = $(window).height();
-		var scrollToElem = targetPos - winHeight+200;
+		var scrollToElem = targetPos - winHeight+190;
 		$(window).scroll(function(){
 			var winScrollTop = $(this).scrollTop();
 			if(winScrollTop > scrollToElem){
@@ -42,8 +42,28 @@ window.addEventListener("DOMContentLoaded", function() {
    
 });
 var arrowClick = $('.sec-counter__current').text();
+if(arrowClick == 1){
+	$(".nav-top__link").addClass("top-disable");
+} else{
+	$(".nav-top__link").removeClass("top-disable");
+}
+if(arrowClick == 8){
+	$(".nav-bottom__link").addClass("bottom-disable");
+} else{
+	$(".nav-bottom__link").removeClass("bottom-disable");
+}
 $( window ).scroll(function() {
 	var arrowClick = $('.sec-counter__current').text();
+	if(arrowClick == 1){
+		$(".nav-top__link").addClass("top-disable");
+	} else{
+		$(".nav-top__link").removeClass("top-disable");
+	}
+	if(arrowClick == 8){
+		$(".nav-bottom__link").addClass("bottom-disable");
+	} else{
+		$(".nav-bottom__link").removeClass("bottom-disable");
+	}
 	if(arrowClick == 1){
 		$(".nav-bottom__link").attr("href", "#properties");
 		$(".nav-top__link").attr("href", "#");
@@ -103,7 +123,7 @@ var sliderSelector = ".swiper-container",
     breakpoints: {
       1189: {
         coverflowEffect: {
-          depth: 600 // Depth offset in px (slides translate in Z axis)
+          depth: 720 // Depth offset in px (slides translate in Z axis)
         }
       },
       1023: {

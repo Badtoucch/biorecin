@@ -9,6 +9,8 @@
 	align-items: center
 	justify-content: center
 	flex-direction: column
+	+r(1500)
+		display: none
 .sec-counter-block
 	width: 50px
 	height: 50px
@@ -39,6 +41,7 @@
 	position: relative
 	overflow: hidden
 	margin: 17px 0
+	box-shadow: inset 0 0 0 0.5px #fff
 .sec-counter-block_full
 	background-color: #fff
 	overflow: hidden
@@ -76,7 +79,7 @@
 	-webkit-transform-origin: left
 	-ms-transform-origin: left
 	transform-origin: left
-	transform: rotate(40deg)
+	transform: rotate(45deg)
 	z-index: 2
 
 .sec-counter__right_full
@@ -105,3 +108,25 @@
 	justify-content: center
 	position: relative
 	z-index: 3
+.nav-top
+	width: 9px
+	height: 20px
+.nav-top__link
+	display: block
+	width: 9px
+	height: 20px
+	background: url(../img/arrow-top.png) no-repeat center
+.nav-bottom
+	width: 9px
+	height: 20px
+.nav-bottom__link
+	display: block
+	width: 9px
+	height: 20px
+	background: url(../img/arrow-bottom.png) no-repeat center
+.top-disable
+	pointer-events: none
+	background: url(../img/top-no-active.png) no-repeat center
+.bottom-disable
+	pointer-events: none
+	background: url(../img/bottom-no-active.png) no-repeat center
