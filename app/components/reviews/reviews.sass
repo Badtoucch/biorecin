@@ -1,6 +1,9 @@
 .reviews
 	padding: 120px 0
+	margin-bottom: 130px
 	position: relative
+	+r(1189)
+		margin-bottom: 60px
 	&:before
 		content: ''
 		position: absolute
@@ -12,6 +15,8 @@
 		background-color: #f7f3ee
 	+r(1189)
 		padding: 60px 0
+	+r(1023)
+		margin-bottom: 0
 	.container
 		position: relative
 	&-content
@@ -123,18 +128,18 @@
 .swiper-button-prev,.swiper-button-next
 	position: absolute
 	top: 50%
-	left: -90px
+	left: 0px
 	transform: translateY(-330%)
 	fill: #bfad95
 	transition: .5s
-	+r(1360)
-		left: -50px
-	+r(1280)
+	+r(1200)
 		top: 0
 		transform: none
 		left: 0
-	+r(767)
+	+r(1189)
 		top: -30px
+		left: 20px
+	+r(767)
 		left: 50%
 		transform: translateX(-154%)
 	+r(479)
@@ -143,13 +148,12 @@
 	&:hover
 		fill: #0aa5b5
 .swiper-button-next
-	right: -90px
+	right: 0px
 	left: auto
-	+r(1360)
-		right: -50px
-		left: auto
-	+r(1280)
+	+r(1200)
 		right: 0
+	+r(1189)
+		right: 20px
 	+r(767)
 		right: 50%
 		left: auto
@@ -236,6 +240,10 @@
 		margin-left: auto
 		margin-right: 211px
 		background-color: #f3eee8
+		+r(1189)
+			margin-top: 5px
+		+r(1023)
+			margin-top: -7px
 .swiper-slide-next
 	.reviews-box__img
 		transform: scale(1.5)
@@ -243,3 +251,7 @@
 		margin-top: 10px
 		margin-left: 206px
 		background-color: #f3eee8
+		+r(1189)
+			margin-top: 5px
+		+r(1023)
+			margin-top: -7px
