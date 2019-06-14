@@ -412,7 +412,10 @@ input::-ms-clear { display: none; }
 @media all and (-ms-high-contrast:none) {
   .order-form__field input {
     height: 68px;
-    line-height: 68px;
+    //line-height: 68px;
+  }
+  .popup-box .order-form__field {
+    line-height: 1 !important;
   }
 }
 
