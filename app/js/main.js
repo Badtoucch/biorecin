@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		var target = $(el);
 		var targetPos = target.offset().top;
 		var winHeight = $(window).height();
-		var scrollToElem = targetPos - winHeight+190;
+		var scrollToElem = targetPos - 200;
 		$(window).scroll(function(){
 			var winScrollTop = $(this).scrollTop();
 			if(winScrollTop > scrollToElem){
@@ -42,56 +42,7 @@ window.addEventListener("DOMContentLoaded", function() {
    
 });
 var arrowClick = $('.sec-counter__current').text();
-if(arrowClick == 1){
-	$(".nav-top__link").addClass("top-disable");
-} else{
-	$(".nav-top__link").removeClass("top-disable");
-}
-if(arrowClick == 8){
-	$(".nav-bottom__link").addClass("bottom-disable");
-} else{
-	$(".nav-bottom__link").removeClass("bottom-disable");
-}
-$( window ).scroll(function() {
-	var arrowClick = $('.sec-counter__current').text();
-	if(arrowClick == 1){
-		$(".nav-top__link").addClass("top-disable");
-	} else{
-		$(".nav-top__link").removeClass("top-disable");
-	}
-	if(arrowClick == 8){
-		$(".nav-bottom__link").addClass("bottom-disable");
-	} else{
-		$(".nav-bottom__link").removeClass("bottom-disable");
-	}
-	if(arrowClick == 1){
-		$(".nav-bottom__link").attr("href", "#properties");
-		$(".nav-top__link").attr("href", "#");
-	} else if (arrowClick == 2){
-		$(".nav-top__link").attr("href", "#header");
-		$(".nav-bottom__link").attr("href", "#pin");
-	} else if (arrowClick == 3){
-		$(".nav-top__link").attr("href", "#properties");
-		$(".nav-bottom__link").attr("href", "#torder");
-	} else if (arrowClick == 4){
-		$(".nav-top__link").attr("href", "#pin");
-		$(".nav-bottom__link").attr("href", "#about");
-	}	else if (arrowClick == 5){
-		$(".nav-top__link").attr("href", "#torder");
-		$(".nav-bottom__link").attr("href", "#composition");
-	} else if (arrowClick == 6){
-		$(".nav-top__link").attr("href", "#about");
-		$(".nav-bottom__link").attr("href", "#reviews");
-	} else if (arrowClick == 7){
-		$(".nav-top__link").attr("href", "#composition");
-		$(".nav-bottom__link").attr("href", "#use");
-	}	else if (arrowClick == 8){
-		$(".nav-top__link").attr("href", "#reviews");
-		$(".nav-bottom__link").attr("href", "#");
-	}
 
-	
-});
 
 
 var sliderSelector = ".swiper-container",
@@ -173,7 +124,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top + 0
-    }, 2500);
+    }, 1500);
 });
 $(window).on('mousemove', function(e) {
 	var wh = $(window).width();
@@ -191,4 +142,57 @@ $(window).on('mousemove', function(e) {
 			'moz-transform': translate
 		});
 	});
+});
+if(arrowClick == 1){
+	$(".nav-top__link").addClass("top-disable");
+} else{
+	$(".nav-top__link").removeClass("top-disable");
+}
+if(arrowClick == 8){
+	$(".nav-bottom__link").addClass("bottom-disable");
+} else{
+	$(".nav-bottom__link").removeClass("bottom-disable");
+}
+$( window ).scroll(function() {
+	var arrowClick = $('.sec-counter__current').text();
+	if(arrowClick == 1){
+		$(".nav-top__link").addClass("top-disable");
+	} else{
+		$(".nav-top__link").removeClass("top-disable");
+	}
+	if(arrowClick == 9){
+		$(".nav-bottom__link").addClass("bottom-disable");
+	} else{
+		$(".nav-bottom__link").removeClass("bottom-disable");
+	}
+	if(arrowClick == 1){
+		$(".nav-bottom__link").attr("href", "#properties");
+		$(".nav-top__link").attr("href", "#");
+	} else if (arrowClick == 2){
+		$(".nav-top__link").attr("href", "#header");
+		$(".nav-bottom__link").attr("href", "#pin");
+	} else if (arrowClick == 3){
+		$(".nav-top__link").attr("href", "#properties");
+		$(".nav-bottom__link").attr("href", "#torder");
+	} else if (arrowClick == 4){
+		$(".nav-top__link").attr("href", "#pin");
+		$(".nav-bottom__link").attr("href", "#about");
+	}	else if (arrowClick == 5){
+		$(".nav-top__link").attr("href", "#torder");
+		$(".nav-bottom__link").attr("href", "#composition");
+	} else if (arrowClick == 6){
+		$(".nav-top__link").attr("href", "#about");
+		$(".nav-bottom__link").attr("href", "#reviews");
+	} else if (arrowClick == 7){
+		$(".nav-top__link").attr("href", "#composition");
+		$(".nav-bottom__link").attr("href", "#use");
+	}	else if (arrowClick == 8){
+		$(".nav-top__link").attr("href", "#reviews");
+		$(".nav-bottom__link").attr("href", "#header-bottom");
+	} else if (arrowClick == 9){
+		$(".nav-top__link").attr("href", "#use");
+		$(".nav-bottom__link").attr("href", "#");
+	}
+
+	
 });
