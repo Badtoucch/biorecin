@@ -215,12 +215,15 @@
 .swiper-slide
 	opacity: 0
 	background: none
-	transition: 0.1s
+	transition: 0.0s
 	.reviews-box-cont
 		position: absolute
 		top: 0
 		left: 0
 		opacity: 0
+		+r(767)
+			position: inherit
+			opacity: 1
 .swiper-slide-active
 	background-color: #f3eee8
 	opacity: 1
@@ -233,7 +236,7 @@
 		margin: 0
 .swiper-slide-prev
 	.reviews-box__img
-		transform: scale(1.5)
+		// transform: scale(1.4)
 		padding: 20px
 		margin-top: 10px
 		margin-left: auto
@@ -243,9 +246,17 @@
 			margin-top: 5px
 		+r(1023)
 			margin-top: -7px
+		+r(767)
+			transform: none
+			padding: 0
+			margin-top: 0
+			margin-right: 0
+			margin: 15px 0 15px 15px
+		+r(479)
+			margin: 15px 0 0
 .swiper-slide-next
 	.reviews-box__img
-		transform: scale(1.5)
+		// transform: scale(1.4)
 		padding: 20px
 		margin-top: 10px
 		margin-left: 206px
@@ -254,3 +265,9 @@
 			margin-top: 5px
 		+r(1023)
 			margin-top: -7px
+		+r(767)
+			transform: none
+			padding: 0
+			margin-top: 0
+			margin-right: 0
+			margin: 15px 0 15px 15px

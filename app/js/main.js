@@ -91,9 +91,9 @@ options = {
 	centeredSlides: true,
 	effect: "coverflow", // 'cube', 'fade', 'coverflow',
 	coverflowEffect: {
-		rotate: 0, // Slide rotate in degrees
-		stretch: 0, // Stretch space between slides (in px)
-		depth: 720, // Depth offset in px (slides translate in Z axis)
+		rotate: 178, // Slide rotate in degrees
+		stretch: 180, // Stretch space between slides (in px)
+		depth: 170, // Depth offset in px (slides translate in Z axis)
 		modifier: 1, // Effect multipler
 		slideShadows: false
 	},
@@ -112,22 +112,29 @@ options = {
 	breakpoints: {
 		1189: {
 			coverflowEffect: {
-				depth: 720 // Depth offset in px (slides translate in Z axis)
+				depth: 170,
+				stretch: 130
 			}
 		},
 		1023: {
 			coverflowEffect: {
-				depth: 900 // Depth offset in px (slides translate in Z axis)
+				depth: 450,
+				stretch: 40
 			}
 		},
 		767: {
 			coverflowEffect: {
-				depth: 0
-				
+				depth: 0,
+				stretch: 0,
+				rotate: 0
 			}
 		},
 		479: {
-			autoHeight: true
+			autoHeight: true,
+			coverflowEffect: {
+				depth: 0
+				
+			}
 		}
 	},
 	// Events
