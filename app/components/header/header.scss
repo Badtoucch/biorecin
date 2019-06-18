@@ -90,6 +90,10 @@
     font-weight: 600;
     line-height: 29px;
     cursor: pointer;
+    &:hover {
+      transition: 0.5s;
+      color: #0aa5b5;
+    }
     &.-border {
       &:after {
         display: block;
@@ -400,6 +404,10 @@
     input:-ms-input-placeholder {
       color: rgba(102, 102, 102, 0.67);
     }
+    input:hover, input:focus {
+      -webkit-box-shadow: inset 0 0 5px 1px rgba(34, 35, 39, 0.3);
+      box-shadow: inset 0 0 5px 1px rgba(34, 35, 39, 0.3)
+    }
   }
   &__rules {
     text-align: center;
@@ -432,7 +440,7 @@ input::-ms-clear { display: none; }
 
 @media all and (max-width: 1189px) {
   .header {
-    max-height: 822px;
+    max-height: 725px;
     margin: 0 auto 0;
     &.-header-bottom {
       margin: 0 auto;
@@ -478,19 +486,21 @@ input::-ms-clear { display: none; }
       }
     }
     &__main-info {
+      min-height: 585px;
       margin: 20px 0 0 auto;
     }
     &__main-product {
+      margin-top: 35px;
       &:after {
         display: none;
       }
       img {
-        max-width: 610px;
+        max-width: 505px;
       }
       &.-bottom-product {
         min-height: 250px;
         img {
-          max-width: 610px;
+          max-width: 505px;
         }
       }
     }
@@ -506,12 +516,15 @@ input::-ms-clear { display: none; }
       }
     }
     &__bottom-arrow {
-      top: -80px;
+      top: -20px;
     }
   }
 }
 
 @media all and (max-width: 1023px) {
+  .block.-top {
+    padding-bottom: 10px;
+  }
   .header {
     max-height: unset;
     margin-bottom: 0;
@@ -572,13 +585,20 @@ input::-ms-clear { display: none; }
         margin-top: 0;
       }
     }
+    &__main-banner {
+      text-align: center;
+    }
     &__main-info {
       min-height: unset;
     }
     &__main-face {
-      max-width: 310px;
-      bottom: -40px;
+      max-width: 325px;
+      bottom: -10px;
       left: 27px;
+      &.-face-bottom {
+        max-width: 310px;
+      }
+
     }
     &__form-box {
       width: 100%;
@@ -592,7 +612,7 @@ input::-ms-clear { display: none; }
       margin: 30px 0 0 auto;
       img {
         position: relative;
-        max-width: 395px;
+        max-width: 420px;
       }
       &.-bottom-product {
         min-height: auto;

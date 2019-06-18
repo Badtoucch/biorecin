@@ -274,6 +274,9 @@
 
 /*________MEDIA______*/
 @media all and (max-width: 1023px) {
+  .ever-popup__close {
+    right: 0 !important;
+  }
   .popup-box {
     width: 291px !important;
     min-height: 442px;
@@ -281,6 +284,9 @@
     background: none;
     &__left-side {
       display: none;
+    }
+    &__right-side {
+      right: 0;
     }
     .order-form {
       &__item {
