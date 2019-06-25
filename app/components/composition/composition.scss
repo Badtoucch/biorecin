@@ -317,3 +317,12 @@
     }
   }
 }
+@media all and (max-width: 479px) {
+  .composition {
+    &__item {
+      &.-vitamin p {
+        margin: 0 auto;
+      }
+    }
+  }
+}
