@@ -199,7 +199,7 @@ burgerButton.onclick = function () {
     menuBg.classList.toggle("-enabled");
 };
 closeMenu.onclick = function () {
-    parentChild.classList.remove("-enabled");
+    this.parentNode.classList.remove("-enabled");
     rightMenu.classList.toggle("-show");
 };
 menuBg.onclick = function () {
