@@ -132,8 +132,9 @@ options = {
 		479: {
 			autoHeight: true,
 			coverflowEffect: {
-				depth: 0
-				
+				depth: 0,
+				stretch: 0,
+				rotate: 0				
 			}
 		}
 	},

@@ -811,6 +811,9 @@ input::-ms-clear { display: none; }
 
 
 @media all and (max-width: 767px) {
+	.block.-top {
+    padding-bottom: 30px;
+  }
   .header {
     &.-header-bottom {
       padding-bottom: 20px;
@@ -850,6 +853,9 @@ input::-ms-clear { display: none; }
   }
 }
 @media all and (max-width: 479px) {
+	.block.-top {
+    padding-bottom: 25px;
+  }
   .header {
     &:after {
       display: none;

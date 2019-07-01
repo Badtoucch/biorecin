@@ -146,7 +146,10 @@
 
 @media all and (max-width: 1189px) {
   .composition {
-    padding: 60px 0 120px;
+		padding: 60px 0 120px;
+		&__title {
+			padding-top: 15px;
+    }
     &__item {
       &.-grape {
         min-height: 146px;
@@ -175,7 +178,8 @@
   .composition {
     background-position-x: 53%;
     &__title {
-      margin-bottom: 25px;
+			margin-bottom: 25px;
+			padding-top: 10px;
     }
     &__item-subtitle {
       margin: 0 auto 25px;
