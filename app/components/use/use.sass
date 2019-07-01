@@ -174,7 +174,7 @@
 					display: flex
 					flex-direction: column
 					margin-left: auto
-					margin-right: 20px
+					margin-right: 78px
 					margin-top: 15px
 				+r(479)
 					margin-left: 0
@@ -208,6 +208,8 @@
 			z-index: 0
 			+r(639)
 				background-color: #efe8de
+				width: 140px
+				height: 140px
 			+r(479)
 				margin-right: auto
 				margin-left: auto
@@ -299,6 +301,9 @@
 			display: none
 .second-circle
 	background: linear-gradient(to right, transparent 50%,#bfad95 50%)
+	left: 20px
+	+r(479)
+		left: 0
 	+r(639)
 		background-color: #bfad95
 	&:before
@@ -314,8 +319,8 @@
 		background-color: #2c3e68
 		margin-top: 0
 		position: absolute
-		bottom: -216px
-		left: -206px
+		bottom: -156px
+		left: -151px
 		+r(479)
 			position: relative
 			bottom: 0
@@ -326,6 +331,10 @@
 	background: linear-gradient(to right, transparent 50%,#0aa5b5 50%)
 	+r(639)
 		background-color: #0aa5b5
+		position: relative
+		left: 5px
+		+r(479)
+			left: 0
 	&:before
 		border-radius: 50% 50% 0 0 / 100% 100% 0 0
 		background-color: #0aa5b5
@@ -355,7 +364,9 @@
 	flex-direction: column
 	align-items: center
 	justify-content: center
-
+	+r(639)
+		width: 80px
+		height: 80px
 	.hour
 		color: #000000
 		font-family: "Yeseva One"
@@ -383,6 +394,9 @@
 	flex-direction: column
 	align-items: center
 	justify-content: center
+	+r(639)
+		width: 120px
+		height: 120px
 	&:before
 		content: ''
 		position: absolute
@@ -398,6 +412,9 @@
 		flex-direction: column
 		align-items: center
 		justify-content: center
+		+r(639)
+			width: 100px
+			height: 100px
 
 
 .before-none
@@ -421,8 +438,8 @@
 .text-3
 	+r(639)
 		position: absolute
-		bottom: -364px
-		left: -189px
+		bottom: -304px
+		left: -160px
 	+r(479)
 		position: relative
 		bottom: 0
